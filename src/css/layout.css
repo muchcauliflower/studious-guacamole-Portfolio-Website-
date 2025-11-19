@@ -1,0 +1,81 @@
+html, body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: GeneralFont;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.homepage {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* padding: 0 20px; */
+    z-index: 100;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* background-color: aqua; */
+}
+
+main {
+    padding-top: 12rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+main .title{
+    font-size: 4.5rem;
+    margin-right: 55rem;
+    /* background-color: tomato; */
+    height: 400px;
+}
+
+main .title span:last-child {
+    display: inline-block;
+    min-width: 300px;
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url('../assets/fonts/AbhayaLibre-SemiBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: GeneralFont;
+    src: url('../assets/fonts/ABeeZee-Regular.ttf');
+    font-display: swap;
+}
+
+.IndexFont {
+    font-family: TitleFont;
+    height: 100%;
+    font-size: 3.5rem;
+}
+
+.skillset-section {
+    min-height: 40vh;
+    width: 100%;
+    margin-top: 26.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #B3C4B4;
+}

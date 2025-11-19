@@ -1,0 +1,50 @@
+body {    
+    background: linear-gradient(to bottom, rgba(23, 27, 24, 1) 0%, rgba(19, 47, 42, 1) 100%);
+    /* background-attachment: fixed; */
+}
+
+
+div .highlight-green {
+    color: #028F62;
+}
+
+.homepage {
+    background: url('../assets/blurredimages/homepagebackground2.svg') center center / cover no-repeat;
+    background-attachment: scroll;
+    min-height: 1785px;
+    width: 100%;
+}
+
+h1 .highlight-green {
+    color: #028F62;
+}
+
+
+h1 .highlight-animated-green {
+    background: linear-gradient(
+        to right,
+        #028F62 20%,
+        #132f2a 30%,
+        rgb(29, 255, 153) 70%,
+        #00ff0d 80%
+        
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 2s ease-in-out infinite alternate;
+    will-change: background-position;
+    transform: translateZ(0);
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
