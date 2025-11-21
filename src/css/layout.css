@@ -43,14 +43,14 @@ main {
 
 main .title{
     font-size: 4.5rem;
-    margin-right: 55rem;
+    margin-right: 4.5rem;
     /* background-color: tomato; */
     height: 400px;
 }
 
 main .title span:last-child {
-    display: inline-block;
-    min-width: 300px;
+    /* display: inline-block; */
+    min-width: auto;
 }
 
 @font-face {

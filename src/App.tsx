@@ -1,7 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/colors.css";
-import "./css/layout.css";
 import TypeWriterEffect from "./components/TypeWriterEffect";
+import RotatingText from "./components/RotatingText/RotatingText";
+import RotatingTextFunction from "./components/RotatingText/RotatingTextFunction";
 
 function App() {
   return (
@@ -34,7 +33,9 @@ function App() {
             Hello,
             <br /> I am{" "}
             <span className="highlight-animated-green">Mikhail</span>,
-            <br /> Aspiring <TypeWriterEffect />
+            <br /> Aspiring{""}
+            <br />
+            <RotatingTextFunction />
           </h1>
         </main>
 
