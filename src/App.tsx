@@ -1,6 +1,7 @@
 import TypeWriterEffect from "./components/TypeWriterEffect";
 import RotatingText from "./components/RotatingText/RotatingText";
 import RotatingTextFunction from "./components/RotatingText/RotatingTextFunction";
+import StarBorder from "./components/StarBorder/StarBorder";
 
 function App() {
   return (
@@ -16,13 +17,13 @@ function App() {
           <div className="container text-center">
             <div className="row align-items-start">
               <div className="col">
-                <h2>About</h2>
+                <h3>About</h3>
               </div>
               <div className="col">
-                <h2>Projects</h2>
+                <h3>Projects</h3>
               </div>
               <div className="col">
-                <h2>Contact</h2>
+                <h3>Contact</h3>
               </div>
             </div>
           </div>
@@ -37,6 +38,23 @@ function App() {
             <br />
             <RotatingTextFunction />
           </h1>
+          <p className="subtitle">
+            Currently Located in Philippines. Driven by{" "}
+            <span className="paragraph-highlight">Back-End development</span>,
+            and currently{" "}
+            <span className="paragraph-highlight">
+              leaning into Front-End development
+            </span>{" "}
+            to round out my Full-Stack abilities!
+          </p>
+          <StarBorder
+            as="button"
+            className="custom-class"
+            color="rgb(29, 255, 153)"
+            speed="2s"
+          >
+            Let's get in touch!
+          </StarBorder>
         </main>
 
         {/* skillset section */}

@@ -15,18 +15,18 @@ div .highlight-green {
     width: 100%;
 }
 
-h1 .highlight-green {
+main .highlight-green {
     color: #028F62;
 }
 
 
-h1 .highlight-animated-green {
+main .highlight-animated-green {
     background: linear-gradient(
         to right,
         #028F62 20%,
         #132f2a 30%,
         rgb(29, 255, 153) 70%,
-        #00ff0d 80%
+        #028F62 80%
         
     );
     -webkit-background-clip: text;

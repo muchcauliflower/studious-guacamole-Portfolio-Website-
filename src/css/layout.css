@@ -37,20 +37,33 @@ html, body{
 
 main {
     padding-top: 12rem;
-    padding-left: 4rem;
+    padding-left: 10rem;
     padding-right: 4rem;
 }
 
 main .title{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin-right: 4.5rem;
     /* background-color: tomato; */
-    height: 400px;
+    height: 18.5rem;
 }
 
 main .title span:last-child {
     /* display: inline-block; */
     min-width: auto;
+}
+
+main .subtitle {
+    padding-top: 1rem;;
+    /* background-color: turquoise; */
+    margin-right: 46%;
+    font-size: 1.5rem;
+    color: #2C483F;
+}
+
+p .paragraph-highlight {
+    color: rgb(29, 255, 153);
+    font-weight: 200;
 }
 
 @font-face {
@@ -68,7 +81,7 @@ main .title span:last-child {
 .IndexFont {
     font-family: TitleFont;
     height: 100%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .skillset-section {
