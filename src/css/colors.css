@@ -1,18 +1,24 @@
 body {    
-    background: linear-gradient(to bottom, rgba(23, 27, 24, 1) 0%, rgba(19, 47, 42, 1) 100%);
+    /* background: linear-gradient(to bottom, rgba(23, 27, 24, 1) 0%, rgba(19, 47, 42, 1) 100%); */
+    background: #B3C4B4;
     /* background-attachment: fixed; */
 }
 
+.topbar{
+    color: white;
+    background-color: #171B18;
+}
 
 div .highlight-green {
     color: #028F62;
 }
 
 .homepage {
-    background: url('../assets/blurredimages/homepagebackground2.svg') center center / cover no-repeat;
+    background: url('../assets/blurredimages/homepagebackground3.svg') center top / cover no-repeat;
     background-attachment: scroll;
-    min-height: 1785px;
+    min-height: 100vh;
     width: 100%;
+    background-color: #B3C4B4;
 }
 
 main .highlight-green {
@@ -37,6 +43,19 @@ main .highlight-animated-green {
     animation: textShine 2s ease-in-out infinite alternate;
     will-change: background-position;
     transform: translateZ(0);
+}
+
+main .skillset-section{
+    color: #028F62;
+}
+
+main .titleDescription {
+    color: #94dfc7;
+}
+
+p .paragraph-highlight {
+    color: rgb(29, 255, 153);
+    font-weight: 200;
 }
 
 @keyframes textShine {
