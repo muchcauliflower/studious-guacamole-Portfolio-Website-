@@ -1,7 +1,6 @@
 body {    
-    /* background: linear-gradient(to bottom, rgba(23, 27, 24, 1) 0%, rgba(19, 47, 42, 1) 100%); */
-    background: #B3C4B4;
-    /* background-attachment: fixed; */
+    background: url('../assets/blurredimages/homepagebackground3.svg') center top / cover no-repeat #B3C4B4;
+    background-attachment: scroll;
 }
 
 .topbar{
@@ -14,11 +13,9 @@ div .highlight-green {
 }
 
 .homepage {
-    background: url('../assets/blurredimages/homepagebackground3.svg') center top / cover no-repeat;
-    background-attachment: scroll;
+    background-color: transparent; /* Remove background from here */
     min-height: 100vh;
     width: 100%;
-    background-color: #B3C4B4;
 }
 
 main .highlight-green {
@@ -38,7 +35,7 @@ main .highlight-animated-green {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; --library does not exist, might be an outdated method or attribute*/
     background-size: 500% auto;
     animation: textShine 2s ease-in-out infinite alternate;
     will-change: background-position;
@@ -57,6 +54,18 @@ p .paragraph-highlight {
     color: rgb(29, 255, 153);
     font-weight: 200;
 }
+
+div .skillset-footer-radius{
+    background-color: #b3c4b4;
+}
+
+
+div .LanguagesAndToolsSection{
+    background-image: linear-gradient(to right, #028F62 , #132f2a);
+    /* background-image: linear-gradient(to right, red , yellow); */
+}
+
+
 
 @keyframes textShine {
     0% {
