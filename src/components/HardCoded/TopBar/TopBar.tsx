@@ -1,11 +1,16 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import PopUpNav from "../PopupNav/PopupNav";
 
-function TopBar() {
+const TopBar: React.FC = () => {
+  const navigate = useNavigate();
+
   const items = [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Projects", href: "/projects" },
+    { label: "Contact", href: "/contact" },
   ];
+
   return (
     <div>
       <header className="topbar">
@@ -20,6 +25,6 @@ function TopBar() {
       </header>
     </div>
   );
-}
+};
 
 export default TopBar;

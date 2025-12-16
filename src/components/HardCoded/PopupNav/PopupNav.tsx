@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PopupNav.css";
 
 interface PopUpNavItem {
@@ -16,11 +17,28 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
   items,
   initialActiveIndex = 0,
 }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const containerRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLUListElement>(null);
   const filterRef = useRef<HTMLSpanElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);
-  const [activeIndex, setActiveIndex] = useState<number>(initialActiveIndex);
+
+  // Determine active index based on current route
+  const getActiveIndexFromPath = () => {
+    const index = items.findIndex((item) => item.href === location.pathname);
+    return index !== -1 ? index : initialActiveIndex;
+  };
+
+  const [activeIndex, setActiveIndex] = useState<number>(
+    getActiveIndexFromPath()
+  );
+
+  // Update active index when route changes
+  useEffect(() => {
+    const newIndex = getActiveIndexFromPath();
+    setActiveIndex(newIndex);
+  }, [location.pathname]);
 
   const updateEffectPosition = (element: HTMLElement) => {
     if (!containerRef.current || !filterRef.current || !textRef.current) return;
@@ -40,9 +58,11 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    index: number
+    index: number,
+    href: string
   ) => {
-    const liEl = e.currentTarget;
+    e.preventDefault(); // Prevent default anchor behavior
+    const liEl = e.currentTarget.parentElement as HTMLElement;
     if (activeIndex === index) return;
 
     setActiveIndex(index);
@@ -53,11 +73,15 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
       void textRef.current.offsetWidth;
       textRef.current.classList.add("active");
     }
+
+    // Navigate using React Router
+    navigate(href);
   };
 
   const handleKeyDown = (
     e: React.KeyboardEvent<HTMLAnchorElement>,
-    index: number
+    index: number,
+    href: string
   ) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -65,9 +89,11 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
       if (liEl) {
         handleClick(
           {
-            currentTarget: liEl,
+            currentTarget: e.currentTarget,
+            preventDefault: () => {},
           } as React.MouseEvent<HTMLAnchorElement>,
-          index
+          index,
+          href
         );
       }
     }
@@ -104,8 +130,8 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
             <li key={index} className={activeIndex === index ? "active" : ""}>
               <a
                 href={item.href}
-                onClick={(e) => handleClick(e, index)}
-                onKeyDown={(e) => handleKeyDown(e, index)}
+                onClick={(e) => handleClick(e, index, item.href)}
+                onKeyDown={(e) => handleKeyDown(e, index, item.href)}
               >
                 {item.label}
               </a>

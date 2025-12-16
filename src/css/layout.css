@@ -151,6 +151,67 @@ div .LanguagesAndToolsSectionContents{
     justify-content: center;
 }
 
+/* ProjectsPage */
+.respondr-tile {
+    position: relative;
+    width: 100%;
+    height:85rem; /* This is the height of the responder-tile */
+    left: 0px;
+    margin-top: 7.5rem;
+
+    background: radial-gradient(
+      240.62% 580.97% at 90.65% -12.28%,
+      rgba(19, 47, 42, 0.65) 0%,
+      rgba(61, 29, 23, 0.65) 45.67%,
+      rgba(99, 32, 23, 0.65) 53.37%,
+      rgba(178, 16, 3, 0.65) 76.44%,
+      rgba(138, 24, 13, 0.65) 92.79%,
+      rgba(158, 20, 8, 0.65) 96.39%
+    );
+    border-radius: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.respondr-tile-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: url('/src/assets/blurredimages/respondrBackground.svg') center center / cover no-repeat;
+    z-index: -1;
+}
+
+div .tile-left-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+}
+
+div .tile-right-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10.5rem; */
+    height: 100%;
+    width: 100%;
+    /* background-color: indigo; */
+}
+
+h1 .tile-right-row-text{
+    justify-content: flex-end;
+    /* color: tomato; */
+}
+
+
+
 @font-face {
     font-family: TitleFont;
     src: url('../assets/fonts/AbhayaLibre-SemiBold.ttf');

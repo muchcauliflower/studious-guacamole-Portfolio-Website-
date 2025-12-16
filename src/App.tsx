@@ -1,31 +1,47 @@
-import HomePageMainComponent from "./components/Sections/HomePageMainSection/HomePageMainComponent";
-import { SkillSetComponent } from "./components/Sections/HomePageSkillSetSection/SkillSetComponent";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import TopBar from "./components/HardCoded/TopBar/TopBar";
-import Aurora from "./components/ReactBitsLibrary/Aurora/Aurora";
-// import { LoopingIcons } from "./components/HardCoded/LoopingText/LoopingIcons";
-import LogoDisplay from "./components/HardCoded/LogoDisplay/LogoDisplay";
+import Home from "./Home";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Respondr from "./respondr";
 
-function App() {
+const BackgroundController: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      // Home page
+      document.body.style.background = document.body.style.background =
+        "url('/background/homepagebackground3.svg') center top / cover no-repeat #B3C4B4";
+    } else {
+      // Other pages
+      document.body.style.background =
+        "linear-gradient(to bottom, #171B18, #152521, #132F2A)";
+    }
+  }, [location.pathname]);
+
+  return null; // This component doesn't render anything
+};
+
+const App: React.FC = () => {
   return (
-    <div className="homepage">
+    <Router>
+      <BackgroundController />
       <TopBar />
-      <HomePageMainComponent />
-      <SkillSetComponent />
-      <div className="LanguagesAndToolsSection">
-        <Aurora
-          colorStops={["#028f62", "#028f62", "#028f62"]}
-          blend={0.5}
-          amplitude={2.0}
-          speed={0.5}
-        />
-      </div>
-      <div className="LanguagesAndToolsSectionContainer">
-        <div className="LanguagesAndToolsSectionContents">
-          <LogoDisplay />
-        </div>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/respondr" element={<Respondr />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
