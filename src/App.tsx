@@ -2,7 +2,7 @@ import HomePageMainComponent from "./components/Sections/HomePageMainSection/Hom
 import { SkillSetComponent } from "./components/Sections/HomePageSkillSetSection/SkillSetComponent";
 import TopBar from "./components/HardCoded/TopBar/TopBar";
 import Aurora from "./components/ReactBitsLibrary/Aurora/Aurora";
-import { LoopingIcons } from "./components/HardCoded/LoopingText/LoopingIcons";
+// import { LoopingIcons } from "./components/HardCoded/LoopingText/LoopingIcons";
 import LogoDisplay from "./components/HardCoded/LogoDisplay/LogoDisplay";
 
 function App() {

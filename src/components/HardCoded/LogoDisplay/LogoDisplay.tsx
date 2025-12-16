@@ -1,5 +1,3 @@
-import React from "react";
-
 const LogoDisplay = () => {
   return (
     <div className="py-3 sm:py-32">
@@ -7,7 +5,7 @@ const LogoDisplay = () => {
         <h2 className="text-center text-lg/2 font-semibold [#b3c4b4]">
           Languages and Tools I Use
         </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-12 sm:gap-x-14 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-12 sm:gap-x-14 sm:max-w-xl sm:grid-cols-6 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <img
             width="158"
             height="48"
