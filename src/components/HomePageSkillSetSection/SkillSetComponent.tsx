@@ -8,7 +8,7 @@ export const SkillSetComponent = () => {
           Relevant Skill-Set
           <div className="grid-container">
             <CardContainer
-              iconSrc="/icons/IconSvg_DataBase.svg"
+              iconSrc="public\icons\IconSvg_DataBase.svg"
               title="Database Management"
               description="Exposed with SQL Server (SSMS), Firebase Firestore/Realtime Database, and Azure Blob Storage, Data Warehousing and Loading"
             />
