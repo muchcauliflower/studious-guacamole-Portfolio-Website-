@@ -2,7 +2,6 @@ import React from "react";
 import PopUpNav from "../PopupNav/PopupNav";
 
 const TopBar: React.FC = () => {
-
   const items = [
     { label: "Home", href: "/" },
     { label: "Projects", href: "/projects" },
@@ -26,4 +25,3 @@ const TopBar: React.FC = () => {
 };
 
 export default TopBar;
-
