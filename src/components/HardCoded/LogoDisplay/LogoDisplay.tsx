@@ -9,7 +9,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Languages\React.svg"
+            src="public\icons\LanguagesAndToolsIcons\Languages\React.svg"
             alt="React"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
@@ -17,7 +17,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Languages\SQL.svg"
+            src="public\icons\LanguagesAndToolsIcons\Languages\SQL.svg"
             alt="SQL"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
@@ -25,7 +25,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Languages\Python.svg"
+            src="public\icons\LanguagesAndToolsIcons\Languages\Python.svg"
             alt="Python"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
@@ -33,7 +33,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Languages\C-Sharp.svg"
+            src="public\icons\LanguagesAndToolsIcons\Languages\C-Sharp.svg"
             alt="C#"
             className="col-span-2 max-h-[6rem] w-full object-contain sm:col-start-2 lg:col-span-1"
           />
@@ -41,7 +41,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Languages\Java.svg"
+            src="public\icons\LanguagesAndToolsIcons\Languages\Java.svg"
             alt="Java"
             className="col-span-2 col-start-2 max-h-[6rem] w-full object-contain sm:col-start-auto lg:col-span-1"
           />
@@ -50,15 +50,15 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Tools\AndroidStudio.svg"
-            alt="TAndroid Studio"
+            src="public\icons\LanguagesAndToolsIcons\Tools\AndroidStudio.svg"
+            alt="Android Studio"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
 
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Tools\Git.svg"
+            src="public\icons\LanguagesAndToolsIcons\Tools\Git.svg"
             alt="Git"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
@@ -66,7 +66,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Tools\Azure.svg"
+            src="public\icons\LanguagesAndToolsIcons\Tools\Azure.svg"
             alt="Azure"
             className="col-span-2 max-h-[6rem] w-full object-contain lg:col-span-1"
           />
@@ -74,7 +74,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Tools\Flutter.svg"
+            src="public\icons\LanguagesAndToolsIcons\Tools\Flutter.svg"
             alt="Flutter"
             className="col-span-2 max-h-[6rem] w-full object-contain sm:col-start-2 lg:col-span-1"
           />
@@ -82,7 +82,7 @@ const LogoDisplay = () => {
           <img
             width="158"
             height="48"
-            src="src\assets\icons\LanguagesAndToolsIcons\Tools\Figma.svg"
+            src="public\icons\LanguagesAndToolsIcons\Tools\Figma.svg"
             alt="Figma"
             className="col-span-2 col-start-2 max-h-[6rem] w-full object-contain sm:col-start-auto lg:col-span-1"
           />
