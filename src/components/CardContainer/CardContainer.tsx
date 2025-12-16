@@ -5,10 +5,11 @@ interface CardContainerProps {
 }
 
 function CardContainer({ iconSrc, title, description }: CardContainerProps) {
+  console.log("Icon path:", iconSrc);
   return (
     <div className="grid-section">
       <div className="col-sm-2 p-1">
-        <img src={iconSrc}></img>
+        <img src={iconSrc} alt={title || "icon"} />
       </div>
       <div className="grid-section-title">
         <h4>
