@@ -1,4 +1,3 @@
-import React from "react";
 import CardContainer from "../CardContainer/CardContainer";
 
 export const SkillSetComponent = () => {
@@ -46,3 +45,4 @@ export const SkillSetComponent = () => {
     </main>
   );
 };
+
