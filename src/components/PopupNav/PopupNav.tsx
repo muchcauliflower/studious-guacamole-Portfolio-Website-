@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./PopupNav.css";
+import "./PopUpNav.css";
 
 interface PopUpNavItem {
   label: string;
@@ -120,4 +120,3 @@ const PopUpNav: React.FC<PopUpNavProps> = ({
 };
 
 export default PopUpNav;
-
